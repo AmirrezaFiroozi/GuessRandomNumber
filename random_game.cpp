@@ -16,13 +16,13 @@ void guess(char message[] = "Please guess: "){ // defines a function for getting
 }
 int main()
 {
-    srand(time(0)); // passes current time in second to srand function to use as the beginning number
+    srand(time(0)); // passes current time in seconds to srand function to use as the beginning number
  int randomNumber = (rand()%1000) + 1; // initialises a true random integer between 1 and 1000.
  guess("Please guess a number between 1 and 1000 : ");
     while ( guessedNumber != randomNumber )// the codes in here get executed as long as the numbers don't match
     {
         if( randomNumber > guessedNumber){
-            cout<<"You need to enter a bigger number"<<endl;
+            cout<<"You need to guess a bigger number"<<endl;
             guess(); // calls guess() function
         }else if ( randomNumber < guessedNumber ){
         
